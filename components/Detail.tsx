@@ -13,8 +13,8 @@ import SimilarSection from './Similar';
 const Detail = ({data,closeModal,complete}:{data:PokemonDetails,closeModal:()=>void,complete:PokemonDetails[]}) => {
     const [selectedSection, setSelectedSection] = useState('about');
   return (
-    <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center sm:justify-end z-50  max-sm:overflow-scroll'>
-    <div className='bg-white max-sm:p-[7px] p-[17px] max-sm:w-[200px] w-[659px] flex flex-col justify-between'>
+    <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center sm:justify-end z-50  overflow-scroll'>
+    <div className='bg-white max-sm:p-[7px] p-[17px] max-sm:w-[300px] w-[659px] flex flex-col justify-between'>
       <div className='hidden sm:flex relative bg-gradient-to-b from-[#7FCAD1] to-[#3DA0A9] max-sm:h-[300px] h-[340px] max-sm:w-[180px] w-[624px]  rounded-[15px]'>
         <div className=' absolute top-[15px]  sm:left-[15px] max-sm:p-1.5 p-3 bg-white rounded-[15px] max-sm:w-full max-sm:h-10' onClick={closeModal}>
        
@@ -60,22 +60,22 @@ const Detail = ({data,closeModal,complete}:{data:PokemonDetails,closeModal:()=>v
         </div>
       </div>
 
-      <div className='flex-end flex justify-center'>
-      <ul className=' flex sm:justify-evenly bg-[#E9E9E9] max-sm:p-[2px] p-[8px] cursor-pointer rounded-[60px] items-center max-sm:w-[200px]  w-[428px] font-medium font-general'>
+      <div className=' flex justify-evenly'>
+      <ul className=' flex sm:justify-evenly bg-[#E9E9E9] max-sm:p-[4px] p-[8px] cursor-pointer rounded-[60px] items-center max-sm:w-[250px]  w-[428px] font-medium font-general'>
             <li
-              className={`max-sm:text-sm max-sm:py-[6px] py-[12px] max-sm:px-[10px] px-[40px] rounded-[60px] ${selectedSection === 'about' ? 'text-black bg-white shadow-md' : ''}`}
+              className={`max-sm:text-sm max-sm:py-[6px] py-[12px] max-sm:px-[20px] px-[40px] rounded-[60px] ${selectedSection === 'about' ? 'text-black bg-white shadow-md' : ''}`}
               onClick={() => setSelectedSection('about')}
             >
               About
             </li>
             <li
-              className={`max-sm:text-sm max-sm:py-[6px] py-[12px] max-sm:px-[10px] px-[40px] rounded-[60px] ${selectedSection === 'stats' ? 'text-black bg-white shadow-md' : ''}`}
+              className={`max-sm:text-sm max-sm:py-[6px] py-[12px] max-sm:px-[20px] px-[40px] rounded-[60px] ${selectedSection === 'stats' ? 'text-black bg-white shadow-md' : ''}`}
               onClick={() => setSelectedSection('stats')}
             >
               Stats
             </li>
             <li
-              className={`max-sm:text-sm max-sm:py-[6px] py-[12px] max-sm:px-[10px] px-[40px] rounded-[60px] ${selectedSection === 'similar' ? 'text-black bg-white shadow-md' : ''}`}
+              className={`max-sm:text-sm max-sm:py-[6px] py-[12px] max-sm:px-[20px] px-[40px] rounded-[60px] ${selectedSection === 'similar' ? 'text-black bg-white shadow-md' : ''}`}
               onClick={() => setSelectedSection('similar')}
             >
               Similar

@@ -7,7 +7,7 @@ const StatsSection = ({base}:{base:PokemonDetails}) => {
     return (
       <div className='bg-[#D9D9D9]/30 w-full max-sm:py-3 py-10 '>
         <h2 className='max-sm:text-[16px] text-[24px] font-semibold py-2 text-center  bg-gradient-to-r from-transparent  via-white via-50% to-transparent to-100%'>Stats</h2>
-        <ul className=' max-sm:w-[200px] w-[700px]'>
+        <ul className=' max-sm:w-[300px] w-[700px]'>
             {base.stats.map((item,i)=>(
                 <li key={i}>
 <div className='grid grid-cols-3 justify-between max-sm:text-sm text-[20px] space-y-2 gap-2 items-center my-1'>

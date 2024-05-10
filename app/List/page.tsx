@@ -97,7 +97,7 @@ const Page = () => {
 
   return (
     <div className="bg-main font-clash min-h-screen">
-      <div className="max-w-screen-xl mx-auto mt-10">
+      <div className="max-w-screen-xl mx-auto py-10">
         <div className="flex flex-wrap justify-center gap-5">
           {loading ? (
             renderLoadingCards()

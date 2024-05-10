@@ -28,9 +28,9 @@ const Pokecard: React.FC<PokecardProps> = ({ data ,allInfo}) => {
 
 
   return (
-    <div className='relative group my-10' >
+    <div className='relative group my-10 ' >
       {/* Pokecard content */}
-      <div className='bg-white rounded-[20px] border group-hover:border-b-0 group-hover:rounded-b-0 max-sm:w-[150px] w-[300px] max-sm:h-[150px] h-[300px] p-2'>
+      <div className='bg-white rounded-[20px] shadow-md border group-hover:border-b-0 group-hover:rounded-b-0 max-sm:w-[150px] w-[300px] max-sm:h-[150px] h-[300px] p-2'>
         <div className='flex justify-center items-center
 '>
           <Image src={data.sprites.other.dream_world.front_default || ''} alt={data.name} width={191} height={187} className='absolute max-sm:-top-5 -top-10 object-cover max-sm:w-[120px]' loading='lazy' />

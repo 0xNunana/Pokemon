@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+## Preview
+<img src='/public/screenshots/home.png' alt='home' width='200'><img src='/public/screenshots/list.png' alt='list of pokemons' width='200'><img src='/public/screenshots/theme.png' alt='theme selector' width='200'><img src='/public/screenshots/about.png' alt='about pokemon' width='200'><img src='/public/screenshots/stats.png' alt='pokemon stats' width='200'><img src='/public/screenshots/similar.png' alt='similar pokemons' width='200'>
+<img src='/public/screenshots/page.png' alt='pagination ' width='200'>
+<img src='/public/screenshots/color.png' alt='changed theme' width='200'>
+
+
 ## Getting Started
 
 First, run the development server:
